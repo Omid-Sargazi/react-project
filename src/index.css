@@ -43,3 +43,15 @@ ul li {
   background: #212ea0;
   color: white;
 }
+
+ul {
+  display: flex;
+  background: blanchedalmond;
+  margin-block-start: 0;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+}
+ul li {
+  padding: 20px;
+}

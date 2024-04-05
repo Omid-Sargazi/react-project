@@ -1,0 +1,19 @@
+{
+    "superheroes":[
+        {
+            "id":1,
+            "name":"Omid",
+            "LastName":"Sargazi"
+        },
+        {
+            "id":2,
+            "name":"Saeed",
+            "LastName":"Sargazi2"
+        },
+        {
+            "id":3,
+            "name":"Zeinab",
+            "LastName":"Shikh"
+        }
+    ]
+}
