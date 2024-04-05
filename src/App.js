@@ -1,3 +1,4 @@
+import { QueryClientProvider, QueryClient } from "react-query";
 import About from "./components/About/About";
 import Campus from "./components/Campus/Campus";
 import Hero from "./components/Hero/Hero";
@@ -10,29 +11,32 @@ import HomePage from "./components/ReactQuery/Home.page";
 import RqSuperHero from "./components/ReactQuery/RqSuperHero.page";
 import SuperHeroes from "./components/ReactQuery/SuperHeroes.page";
 
+const queryCLient = new QueryClient();
+
 function App() {
   return (
-    <div>
-      <div className="container">
-        <BrowserRouter>
-          <ul>
-            <li>
-              <Link to={"/"}>Home</Link>
-            </li>
-            <li>
-              <Link to={"/rq-super-hero"}>RQ super Hero</Link>
-            </li>
-            <li>
-              <Link to={"/super-hero"}>Traditional Super hero</Link>
-            </li>
-          </ul>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/rq-super-hero" element={<RqSuperHero />} />
-            <Route path="/super-hero" element={<SuperHeroes />} />
-          </Routes>
-        </BrowserRouter>
-        {/* <Navbar />
+    <QueryClientProvider client={queryCLient}>
+      <div>
+        <div className="container">
+          <BrowserRouter>
+            <ul>
+              <li>
+                <Link to={"/"}>Home</Link>
+              </li>
+              <li>
+                <Link to={"/rq-super-hero"}>RQ super Hero</Link>
+              </li>
+              <li>
+                <Link to={"/super-hero"}>Traditional Super hero</Link>
+              </li>
+            </ul>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/rq-super-hero" element={<RqSuperHero />} />
+              <Route path="/super-hero" element={<SuperHeroes />} />
+            </Routes>
+          </BrowserRouter>
+          {/* <Navbar />
         <Hero />
         <Title subtitle="Our Program" title="what we offer" />
         <Programs />
@@ -41,8 +45,9 @@ function App() {
         <Campus />
         <Title subtitle="Testimonials" title="What Students Says" />
         <Testimonials /> */}
+        </div>
       </div>
-    </div>
+    </QueryClientProvider>
   );
 }
 
