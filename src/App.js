@@ -10,6 +10,7 @@ import { Routes, Route, BrowserRouter, Link } from "react-router-dom";
 import HomePage from "./components/ReactQuery/Home.page";
 import RqSuperHero from "./components/ReactQuery/RqSuperHero.page";
 import SuperHeroes from "./components/ReactQuery/SuperHeroes.page";
+import { ReactQueryDevtools } from "react-query/devtools";
 
 const queryCLient = new QueryClient();
 
@@ -47,6 +48,7 @@ function App() {
         <Testimonials /> */}
         </div>
       </div>
+      <ReactQueryDevtools initialIsOpen={false} position="bottom-right" />
     </QueryClientProvider>
   );
 }

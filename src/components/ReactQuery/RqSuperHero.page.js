@@ -3,7 +3,7 @@ import React from "react";
 import axios from "axios";
 
 const fetchSuperHeros = () => {
-  return axios.get("http://localhost:4001/superheroes12");
+  return axios.get("http://localhost:4001/superheroes");
 };
 
 export default function RqSuperHero() {

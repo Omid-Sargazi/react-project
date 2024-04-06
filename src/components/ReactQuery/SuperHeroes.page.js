@@ -8,7 +8,7 @@ export default function SuperHeroes() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4001/superheroes1")
+      .get("http://localhost:4001/superheroes")
       .then((res) => {
         setData(res.data);
         setIsLoading(false);
