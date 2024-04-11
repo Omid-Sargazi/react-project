@@ -9,7 +9,10 @@ const fetchSuperHeros = () => {
 export default function RqSuperHero() {
   const { isLoading, data, isError, error, isFetching } = useQuery(
     "super-heroes",
-    fetchSuperHeros
+    fetchSuperHeros,
+    {
+      staleTile: 100000,
+    }
   );
 
   console.log({ isLoading, isFetching });
