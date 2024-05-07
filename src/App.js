@@ -65,6 +65,7 @@ import BunchOfStuff from "./components/BunchOfStuff";
 import OtherStuffAlsoComplicated from "./components/OtherStuffAlsoComplicated";
 import ClassCounter from "./components/UseState/ClassCounter";
 import HooksCounter from "./components/Hooks/HooksCounter";
+import HooksCounterTwo from "./components/Hooks/HooksCounterTwo";
 
 const App = () => {
   return (
@@ -73,7 +74,8 @@ const App = () => {
       <BunchOfStuff />
       <OtherStuffAlsoComplicated /> */}
       {/* <ClassCounter /> */}
-      <HooksCounter />
+      {/* <HooksCounter /> */}
+      <HooksCounterTwo />
     </div>
   );
 };
