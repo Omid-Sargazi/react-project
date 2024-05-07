@@ -66,6 +66,7 @@ import OtherStuffAlsoComplicated from "./components/OtherStuffAlsoComplicated";
 import ClassCounter from "./components/UseState/ClassCounter";
 import HooksCounter from "./components/Hooks/HooksCounter";
 import HooksCounterTwo from "./components/Hooks/HooksCounterTwo";
+import HooksCounterThree from "./components/Hooks/HooksCounterThree";
 
 const App = () => {
   return (
@@ -75,7 +76,8 @@ const App = () => {
       <OtherStuffAlsoComplicated /> */}
       {/* <ClassCounter /> */}
       {/* <HooksCounter /> */}
-      <HooksCounterTwo />
+      {/* <HooksCounterTwo /> */}
+      <HooksCounterThree />
     </div>
   );
 };
