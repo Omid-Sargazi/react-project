@@ -68,6 +68,7 @@ import HooksCounter from "./components/Hooks/HooksCounter";
 import HooksCounterTwo from "./components/Hooks/HooksCounterTwo";
 import HooksCounterThree from "./components/Hooks/HooksCounterThree";
 import HookCounterFour from "./components/Hooks/HookCounterFour";
+import MuiSelect from "./components/MUI/MuiSelect";
 
 const App = () => {
   return (
@@ -79,7 +80,8 @@ const App = () => {
       {/* <HooksCounter /> */}
       {/* <HooksCounterTwo /> */}
       {/* <HooksCounterThree /> */}
-      <HookCounterFour />
+      {/* <HookCounterFour /> */}
+      <MuiSelect />
     </div>
   );
 };
