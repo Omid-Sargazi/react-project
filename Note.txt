@@ -56,3 +56,9 @@ npm run serve-json/// for run API endpoints
 Only call Hooks in the top level;
 Don't call Hooks inside loops, conditions, or nested functions.
 call them for within React functional components and not just any regular javascript functions. 
+the useState hook lets you add state to function components
+In classes, the state is always an object;
+with the useState hook, the state doesn't have to be an object.
+the first element is the current value of the state, and the second element is a state second function.
+New state values depends on the previous state values? You can pass the function to the setter function.
+when dealing with objects and arrays, always make sure to spread your state variable and then call the setter function.

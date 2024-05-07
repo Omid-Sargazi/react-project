@@ -67,6 +67,7 @@ import ClassCounter from "./components/UseState/ClassCounter";
 import HooksCounter from "./components/Hooks/HooksCounter";
 import HooksCounterTwo from "./components/Hooks/HooksCounterTwo";
 import HooksCounterThree from "./components/Hooks/HooksCounterThree";
+import HookCounterFour from "./components/Hooks/HookCounterFour";
 
 const App = () => {
   return (
@@ -77,7 +78,8 @@ const App = () => {
       {/* <ClassCounter /> */}
       {/* <HooksCounter /> */}
       {/* <HooksCounterTwo /> */}
-      <HooksCounterThree />
+      {/* <HooksCounterThree /> */}
+      <HookCounterFour />
     </div>
   );
 };
