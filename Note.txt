@@ -33,3 +33,26 @@ Course Content
 13- Axios Interceptor
 
 npm run serve-json/// for run API endpoints
+///////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////Hooks/////////////////////
+Only call Hooks in the top level;
+Don't call Hooks inside loops, conditions, or nested functions.
+call them for within React functional components and not just any regular javascript functions. 
