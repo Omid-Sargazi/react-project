@@ -69,7 +69,8 @@ import HooksCounterTwo from "./components/Hooks/HooksCounterTwo";
 import HooksCounterThree from "./components/Hooks/HooksCounterThree";
 import HookCounterFour from "./components/Hooks/HookCounterFour";
 import MuiSelect from "./components/MUI/MuiSelect";
-
+import MuiRadioButton from "./components/MUI/MuiRadioButton";
+import "./App.css";
 const App = () => {
   return (
     <div className="scrollable-block">
@@ -81,7 +82,8 @@ const App = () => {
       {/* <HooksCounterTwo /> */}
       {/* <HooksCounterThree /> */}
       {/* <HookCounterFour /> */}
-      <MuiSelect />
+      {/* <MuiSelect /> */}
+      <MuiRadioButton />
     </div>
   );
 };
