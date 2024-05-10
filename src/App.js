@@ -78,6 +78,7 @@ import ClassComponent from "./components/UseStateHook/ClassComponent";
 import UseEffectOne from "./components/Hooks/UseEffectOne";
 import ClassMousedown from "./components/Hooks/ClassMouse";
 import UseEffectMouse from "./components/Hooks/useEffectMouse";
+import MouseContainer from "./components/Hooks/MouseContainer";
 const App = () => {
   return (
     <div className="scrollable-block">
@@ -97,7 +98,8 @@ const App = () => {
       {/* <ClassComponent /> */}
       {/* <UseEffectOne /> */}
       {/* <ClassMousedown /> */}
-      <UseEffectMouse />
+      {/* <UseEffectMouse /> */}
+      <MouseContainer />
     </div>
   );
 };

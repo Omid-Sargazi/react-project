@@ -12,6 +12,10 @@ export default function UseEffectMouse() {
   useEffect(() => {
     console.log("useEffect called");
     window.addEventListener("mousemove", logMousePosition);
+    // return () => {
+    //   console.log("Component unmounted....");
+    //   window.removeEventListener("mousemove", logMousePosition);
+    // };
   }, []);
 
   return (
