@@ -74,6 +74,8 @@ import "./App.css";
 import HookCounter from "./components/UseStateHook/HookCounter";
 import HookCOunterUSeState from "./components/UseStateHook/HookCOunterUSeState";
 import UseStateArray from "./components/UseStateHook/UseStateArray";
+import ClassComponent from "./components/UseStateHook/ClassComponent";
+import UseEffectOne from "./components/Hooks/UseEffectOne";
 const App = () => {
   return (
     <div className="scrollable-block">
@@ -89,7 +91,9 @@ const App = () => {
       {/* <MuiRadioButton /> */}
       {/* <HookCounter /> */}
       {/* <HookCOunterUSeState /> */}
-      <UseStateArray />
+      {/* <UseStateArray /> */}
+      <ClassComponent />
+      <UseEffectOne />
     </div>
   );
 };

@@ -1,0 +1,3 @@
+useEffect: updating a DOM. fetching data from an API endpoints. setting and subscription timer.
+useEffect runs after every render.
+ 
