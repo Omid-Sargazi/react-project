@@ -92,7 +92,7 @@ const App = () => {
       {/* <HookCounter /> */}
       {/* <HookCOunterUSeState /> */}
       {/* <UseStateArray /> */}
-      <ClassComponent />
+      {/* <ClassComponent /> */}
       <UseEffectOne />
     </div>
   );
