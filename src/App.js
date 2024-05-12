@@ -79,6 +79,7 @@ import UseEffectOne from "./components/Hooks/UseEffectOne";
 import ClassMousedown from "./components/Hooks/ClassMouse";
 import UseEffectMouse from "./components/Hooks/useEffectMouse";
 import MouseContainer from "./components/Hooks/MouseContainer";
+import IntervalKooks from "./components/Hooks/IntervalKooks";
 const App = () => {
   return (
     <div className="scrollable-block">
@@ -99,7 +100,8 @@ const App = () => {
       {/* <UseEffectOne /> */}
       {/* <ClassMousedown /> */}
       {/* <UseEffectMouse /> */}
-      <MouseContainer />
+      {/* <MouseContainer /> */}
+      <IntervalKooks />
     </div>
   );
 };
