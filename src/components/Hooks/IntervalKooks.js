@@ -3,7 +3,8 @@ import React, { useState, useEffect } from "react";
 export default function IntervalKooks() {
   const [count, setCount] = useState(0);
   const tick = () => {
-    setCount((prev) => prev + 1);
+    // setCount((prev) => prev + 1);
+    setCount(count + 1);
   };
 
   useEffect(() => {
@@ -11,7 +12,7 @@ export default function IntervalKooks() {
     return () => {
       clearInterval(interval);
     };
-  }, []);
+  }, [count]);
 
   return (
     <>
