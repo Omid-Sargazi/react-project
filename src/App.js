@@ -84,6 +84,7 @@ import DataFetching from "./components/DataFetching";
 import ComponentC from "./components/useContext/ComponentC";
 import React from "react";
 export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
 
 const App = () => {
   return (
@@ -109,7 +110,9 @@ const App = () => {
       {/* <IntervalKooks /> */}
       {/* <DataFetching /> */}
       <UserContext.Provider value={"Omid"}>
-        <ComponentC />
+        <ChannelContext.Provider value={"Sargazi"}>
+          <ComponentC />
+        </ChannelContext.Provider>
       </UserContext.Provider>
     </div>
   );
