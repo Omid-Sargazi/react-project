@@ -81,6 +81,10 @@ import UseEffectMouse from "./components/Hooks/useEffectMouse";
 import MouseContainer from "./components/Hooks/MouseContainer";
 import IntervalKooks from "./components/Hooks/IntervalKooks";
 import DataFetching from "./components/DataFetching";
+import ComponentC from "./components/useContext/ComponentC";
+import React from "react";
+export const UserContext = React.createContext();
+
 const App = () => {
   return (
     <div className="scrollable-block">
@@ -103,7 +107,10 @@ const App = () => {
       {/* <UseEffectMouse /> */}
       {/* <MouseContainer /> */}
       {/* <IntervalKooks /> */}
-      <DataFetching />
+      {/* <DataFetching /> */}
+      <UserContext.Provider value={"Omid"}>
+        <ComponentC />
+      </UserContext.Provider>
     </div>
   );
 };

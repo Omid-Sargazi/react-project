@@ -34,14 +34,7 @@ Course Content
 
 npm run serve-json/// for run API endpoints
 ///////////////////////////////////////////////
-
-
-
-
-
-
-
-
+context provides a way to pass data through the component tree without having to pass props down manually at every level.
 
 
 
