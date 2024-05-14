@@ -80,6 +80,7 @@ import ClassMousedown from "./components/Hooks/ClassMouse";
 import UseEffectMouse from "./components/Hooks/useEffectMouse";
 import MouseContainer from "./components/Hooks/MouseContainer";
 import IntervalKooks from "./components/Hooks/IntervalKooks";
+import DataFetching from "./components/DataFetching";
 const App = () => {
   return (
     <div className="scrollable-block">
@@ -101,7 +102,8 @@ const App = () => {
       {/* <ClassMousedown /> */}
       {/* <UseEffectMouse /> */}
       {/* <MouseContainer /> */}
-      <IntervalKooks />
+      {/* <IntervalKooks /> */}
+      <DataFetching />
     </div>
   );
 };
