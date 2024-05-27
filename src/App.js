@@ -86,6 +86,7 @@ import HookCounter from "./Components/HookCounter";
 import React from "react";
 import "./App.css";
 import HookCounterTwo from "./Components/HookCounterTwo";
+import HookCounterThree from "./Components/HookCounterThree";
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
 
@@ -119,6 +120,7 @@ const App = () => {
       </UserContext.Provider> */}
       <HookCounter />
       <HookCounterTwo />
+      <HookCounterThree />
     </div>
   );
 };
