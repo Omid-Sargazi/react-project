@@ -89,6 +89,7 @@ import HookCounterTwo from "./Components/HookCounterTwo";
 import HookCounterThree from "./Components/HookCounterThree";
 import HookCOunFour from "./Components/HookCOunFour";
 import HookCounterone from "./Components/UseEffects/HookCounterone";
+import HookMouse from "./Components/HookMouse";
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
 
@@ -125,6 +126,7 @@ const App = () => {
       <HookCounterThree />
       <HookCOunFour />
       <HookCounterone />
+      <HookMouse />
     </div>
   );
 };
