@@ -60,29 +60,32 @@
 // }
 
 // export default App;
-import VerySlowComponent from "./components/VerySlowComponent";
-import BunchOfStuff from "./components/BunchOfStuff";
-import OtherStuffAlsoComplicated from "./components/OtherStuffAlsoComplicated";
-import ClassCounter from "./components/UseState/ClassCounter";
-import HooksCounter from "./components/Hooks/HooksCounter";
-import HooksCounterTwo from "./components/Hooks/HooksCounterTwo";
-import HooksCounterThree from "./components/Hooks/HooksCounterThree";
-import HookCounterFour from "./components/Hooks/HookCounterFour";
-import MuiSelect from "./components/MUI/MuiSelect";
-import MuiRadioButton from "./components/MUI/MuiRadioButton";
-import "./App.css";
-import HookCounter from "./components/UseStateHook/HookCounter";
-import HookCOunterUSeState from "./components/UseStateHook/HookCOunterUSeState";
-import UseStateArray from "./components/UseStateHook/UseStateArray";
-import ClassComponent from "./components/UseStateHook/ClassComponent";
-import UseEffectOne from "./components/Hooks/UseEffectOne";
-import ClassMousedown from "./components/Hooks/ClassMouse";
-import UseEffectMouse from "./components/Hooks/useEffectMouse";
-import MouseContainer from "./components/Hooks/MouseContainer";
-import IntervalKooks from "./components/Hooks/IntervalKooks";
-import DataFetching from "./components/DataFetching";
-import ComponentC from "./components/useContext/ComponentC";
+// import VerySlowComponent from "./components/VerySlowComponent";
+// import BunchOfStuff from "./components/BunchOfStuff";
+// import OtherStuffAlsoComplicated from "./components/OtherStuffAlsoComplicated";
+// import ClassCounter from "./components/UseState/ClassCounter";
+// import HooksCounter from "./components/Hooks/HooksCounter";
+// import HooksCounterTwo from "./components/Hooks/HooksCounterTwo";
+// import HooksCounterThree from "./components/Hooks/HooksCounterThree";
+// import HookCounterFour from "./components/Hooks/HookCounterFour";
+// import MuiSelect from "./components/MUI/MuiSelect";
+// import MuiRadioButton from "./components/MUI/MuiRadioButton";
+// import "./App.css";
+// import HookCounter from "./components/UseStateHook/HookCounter";
+// import HookCOunterUSeState from "./components/UseStateHook/HookCOunterUSeState";
+// import UseStateArray from "./components/UseStateHook/UseStateArray";
+// import ClassComponent from "./components/UseStateHook/ClassComponent";
+// import UseEffectOne from "./components/Hooks/UseEffectOne";
+// import ClassMousedown from "./components/Hooks/ClassMouse";
+// import UseEffectMouse from "./components/Hooks/useEffectMouse";
+// import MouseContainer from "./components/Hooks/MouseContainer";
+// import IntervalKooks from "./components/Hooks/IntervalKooks";
+// import DataFetching from "./components/DataFetching";
+// import ComponentC from "./components/useContext/ComponentC";
+import HookCounter from "./Components/HookCounter";
 import React from "react";
+import "./App.css";
+import HookCounterTwo from "./Components/HookCounterTwo";
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
 
@@ -109,11 +112,13 @@ const App = () => {
       {/* <MouseContainer /> */}
       {/* <IntervalKooks /> */}
       {/* <DataFetching /> */}
-      <UserContext.Provider value={"Omid"}>
+      {/* <UserContext.Provider value={"Omid"}>
         <ChannelContext.Provider value={"Sargazi"}>
           <ComponentC />
         </ChannelContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
+      <HookCounter />
+      <HookCounterTwo />
     </div>
   );
 };

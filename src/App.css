@@ -8,3 +8,12 @@
 body {
   padding: 20px;
 }
+
+button {
+  border: 1px solid black;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin: 25px 0px;
+  background: gray;
+  color: white;
+}
