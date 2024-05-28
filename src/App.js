@@ -92,6 +92,7 @@ import HookCounterone from "./Components/UseEffects/HookCounterone";
 import HookMouse from "./Components/HookMouse";
 import MouseContainer from "./Components/MouseContainer";
 import CounterByReducer from "./Components/useReducer/CounterByReducer";
+import CounterByReducerTwo from "./Components/useReducer/CounterByReducerTwo";
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
 
@@ -131,6 +132,7 @@ const App = () => {
       {/* <HookMouse /> */}
       <MouseContainer />
       <CounterByReducer />
+      <CounterByReducerTwo />
     </div>
   );
 };
