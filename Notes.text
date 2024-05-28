@@ -1,3 +1,19 @@
 useEffect: updating a DOM. fetching data from an API endpoints. setting and subscription timer.
 useEffect runs after every render.
  
+ ...........................................Reducer and useReducer.....................
+ useReducer is a hook that is used for state management. it is an alternative to useState;
+  array.reduce(reducer, initialValue)------>Javascript
+  useReducer(reducer, initialValue)-------->React
+  ------------------------------------------
+  singleValue = reducer(accumulator, itemValue);
+  newState = reducer(currentState, action);
+  -----------------------------------------------
+  reduce method returns a single value
+  useReducer returns a  pair of values. [newState, dispatch]
+------------------------------------------------------
+useReducer is a hook that is used for state management in React.
+useReducer is related to reducer function. 
+useState is related to state;
+useEffect is related to side effects;
+useContext is related to context API;
