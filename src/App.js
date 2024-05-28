@@ -94,11 +94,31 @@ import MouseContainer from "./Components/MouseContainer";
 import CounterByReducer from "./Components/useReducer/CounterByReducer";
 import CounterByReducerTwo from "./Components/useReducer/CounterByReducerTwo";
 import CounterByReducerThree from "./Components/useReducer/CounterByReducerThree";
+import ComponentB from "./Components/ComponentB";
+import ComponentC from "./Components/ComponentC";
+import ComponentA from "./Components/ComponentA";
+import { useReducer } from "react";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
+export const CountContext = React.createContext();
+
+const initialState = 0;
+const reducer = (state, action) => {
+  switch (action) {
+    case "inc":
+      return state + 1;
+    case "dec":
+      return state - 1;
+    case "reset":
+      return 0;
+    default:
+      return state;
+  }
+};
 
 const App = () => {
+  const [count, dispatch] = useReducer(reducer, initialState);
   return (
     <div className="scrollable-block">
       {/* <VerySlowComponent />
@@ -126,16 +146,24 @@ const App = () => {
           <ComponentC />
         </ChannelContext.Provider>
       </UserContext.Provider> */}
-      <HookCounter />
+      {/* <HookCounter />
       <HookCounterTwo />
       <HookCounterThree />
-      <HookCOunFour />
+      <HookCOunFour /> */}
       <HookCounterone />
       {/* <HookMouse /> */}
-      <MouseContainer />
+      {/* <MouseContainer />
       <CounterByReducer />
       <CounterByReducerTwo />
-      <CounterByReducerThree />
+      <CounterByReducerThree /> */}
+      <CountContext.Provider
+        value={{ countState: count, countDispatch: dispatch }}
+      >
+        <h1>Count in App: {count}</h1>
+        <ComponentA />
+        <ComponentB />
+        <ComponentC />
+      </CountContext.Provider>
     </div>
   );
 };
