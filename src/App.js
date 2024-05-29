@@ -99,7 +99,8 @@ import ComponentC from "./Components/ComponentC";
 import ComponentA from "./Components/ComponentA";
 import DataFetching from "./Components/DataFetching";
 import DataFetchingTwo from "./Components/DataFetchingTwo";
-import ParentComponent from "./Components/ParentComponent";
+// import ParentComponent from "./Components/ParentComponent";
+import ParentComponent from "./Components/UseMemo/ParentComponent";
 import { useReducer } from "react";
 
 export const UserContext = React.createContext();
@@ -171,6 +172,7 @@ const App = () => {
       <br />
       <hr />
       <DataFetchingTwo /> */}
+      {/* <ParentComponent /> */}
       <ParentComponent />
     </div>
   );
