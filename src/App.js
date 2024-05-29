@@ -98,6 +98,7 @@ import ComponentB from "./Components/ComponentB";
 import ComponentC from "./Components/ComponentC";
 import ComponentA from "./Components/ComponentA";
 import DataFetching from "./Components/DataFetching";
+import DataFetchingTwo from "./Components/DataFetchingTwo";
 import { useReducer } from "react";
 
 export const UserContext = React.createContext();
@@ -166,6 +167,9 @@ const App = () => {
         <ComponentC />
       </CountContext.Provider>
       <DataFetching />
+      <br />
+      <hr />
+      <DataFetchingTwo />
     </div>
   );
 };
