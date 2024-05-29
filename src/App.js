@@ -97,6 +97,7 @@ import CounterByReducerThree from "./Components/useReducer/CounterByReducerThree
 import ComponentB from "./Components/ComponentB";
 import ComponentC from "./Components/ComponentC";
 import ComponentA from "./Components/ComponentA";
+import DataFetching from "./Components/DataFetching";
 import { useReducer } from "react";
 
 export const UserContext = React.createContext();
@@ -164,6 +165,7 @@ const App = () => {
         <ComponentB />
         <ComponentC />
       </CountContext.Provider>
+      <DataFetching />
     </div>
   );
 };
