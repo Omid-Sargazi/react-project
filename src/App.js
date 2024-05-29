@@ -99,6 +99,7 @@ import ComponentC from "./Components/ComponentC";
 import ComponentA from "./Components/ComponentA";
 import DataFetching from "./Components/DataFetching";
 import DataFetchingTwo from "./Components/DataFetchingTwo";
+import ParentComponent from "./Components/ParentComponent";
 import { useReducer } from "react";
 
 export const UserContext = React.createContext();
@@ -152,13 +153,13 @@ const App = () => {
       <HookCounterTwo />
       <HookCounterThree />
       <HookCOunFour /> */}
-      <HookCounterone />
+      {/* <HookCounterone /> */}
       {/* <HookMouse /> */}
       {/* <MouseContainer />
       <CounterByReducer />
       <CounterByReducerTwo />
       <CounterByReducerThree /> */}
-      <CountContext.Provider
+      {/* <CountContext.Provider
         value={{ countState: count, countDispatch: dispatch }}
       >
         <h1>Count in App: {count}</h1>
@@ -169,7 +170,8 @@ const App = () => {
       <DataFetching />
       <br />
       <hr />
-      <DataFetchingTwo />
+      <DataFetchingTwo /> */}
+      <ParentComponent />
     </div>
   );
 };

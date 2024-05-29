@@ -1,0 +1,14 @@
+import React from "react";
+const Count = ({ text, count }) => {
+  console.log(`Rendering ${text}`);
+  return (
+    <>
+      <h1>useCallback Hook</h1>
+      <div>
+        {text}-{count}
+      </div>
+    </>
+  );
+};
+
+export default React.memo(Count);
