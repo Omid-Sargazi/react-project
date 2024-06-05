@@ -4,21 +4,29 @@ const UseEffect01 = () => {
   const [name, setName] = useState("");
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
+  const [timer, setTimer] = useState(0);
 
   const logMousePosition = (e) => {
     console.log("Mouse Event");
     setX(e.clientX);
     setY(e.clientY);
   };
+
+  const tick = () => {
+    setTimer(timer + 1);
+  };
+
   useEffect(() => {
     document.title = `You Clicked ${count} times`;
     console.log("useEffect-updating document title");
     window.addEventListener("mousemove", logMousePosition);
+    const interval = setInterval(tick, 1000);
+    // clearInterval(interval);
     return () => {
       console.log("Component Unmounted code...");
       window.removeEventListener("mousemove", logMousePosition);
     };
-  }, []); ///useEffect runs after rendering component
+  }, [timer, count]); ///useEffect runs after rendering component
 
   const handlename = (e) => {
     setName(e.target.value);
@@ -41,6 +49,7 @@ const UseEffect01 = () => {
       <hr />
       <hr />
       <br />
+      <h1>Timer: {timer}</h1>
       <div>
         Hooks X -{x} Y-{y}
       </div>

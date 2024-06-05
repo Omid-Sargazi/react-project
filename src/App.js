@@ -185,13 +185,12 @@ const App = () => {
       {/* <UseStateHook />
       <USeStateHook002 />
       <UseStateHook03 /> */}
-
       {/* ///////////////////////////////////////////// */}
       {/* <UseState /> */}
-      {/* <UseEffect01 /> */}
-      {/* <MouseContainer /> */}
-      {/* <UseEffect02 /> */}
-      <MouseCounter02 />
+      <UseEffect01 />
+      <MouseContainer />
+      {/* <UseEffect02 />
+      <MouseCounter02 /> */}
     </div>
   );
 };
