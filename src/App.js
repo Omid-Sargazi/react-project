@@ -103,6 +103,8 @@ import UseStateHook from "./Componentstwo/UseStateHook";
 import USeStateHook002 from "./Componentstwo/useStateHook002";
 import UseStateHook03 from "./Componentstwo/useStateHook003";
 import UseState from "./Componentstwo/UseState";
+import UseEffect01 from "./Componentstwo/UseEffect01";
+import MouseContainer from "./Componentstwo/MouseContainer";
 // import ParentComponent from "./Components/ParentComponent";
 import ParentComponent from "./Components/UseMemo/ParentComponent";
 import { useReducer } from "react";
@@ -183,7 +185,9 @@ const App = () => {
       <UseStateHook03 /> */}
 
       {/* ///////////////////////////////////////////// */}
-      <UseState />
+      {/* <UseState /> */}
+      {/* <UseEffect01 /> */}
+      <MouseContainer />
     </div>
   );
 };
