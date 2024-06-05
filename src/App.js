@@ -85,20 +85,21 @@
 import HookCounter from "./Components/HookCounter";
 import React from "react";
 import "./App.css";
-import HookCounterTwo from "./Components/HookCounterTwo";
-import HookCounterThree from "./Components/HookCounterThree";
-import HookCOunFour from "./Components/HookCOunFour";
-import HookCounterone from "./Components/UseEffects/HookCounterone";
-import HookMouse from "./Components/HookMouse";
-import MouseContainer from "./Components/MouseContainer";
-import CounterByReducer from "./Components/useReducer/CounterByReducer";
-import CounterByReducerTwo from "./Components/useReducer/CounterByReducerTwo";
-import CounterByReducerThree from "./Components/useReducer/CounterByReducerThree";
-import ComponentB from "./Components/ComponentB";
-import ComponentC from "./Components/ComponentC";
-import ComponentA from "./Components/ComponentA";
-import DataFetching from "./Components/DataFetching";
-import DataFetchingTwo from "./Components/DataFetchingTwo";
+// import HookCounterTwo from "./Components/HookCounterTwo";
+// import HookCounterThree from "./Components/HookCounterThree";
+// import HookCOunFour from "./Components/HookCOunFour";
+// import HookCounterone from "./Components/UseEffects/HookCounterone";
+// import HookMouse from "./Components/HookMouse";
+// import MouseContainer from "./Components/MouseContainer";
+// import CounterByReducer from "./Components/useReducer/CounterByReducer";
+// import CounterByReducerTwo from "./Components/useReducer/CounterByReducerTwo";
+// import CounterByReducerThree from "./Components/useReducer/CounterByReducerThree";
+// import ComponentB from "./Components/ComponentB";
+// import ComponentC from "./Components/ComponentC";
+// import ComponentA from "./Components/ComponentA";
+// import DataFetching from "./Components/DataFetching";
+// import DataFetchingTwo from "./Components/DataFetchingTwo";
+import UseStateHook from "./Componentstwo/UseStateHook";
 // import ParentComponent from "./Components/ParentComponent";
 import ParentComponent from "./Components/UseMemo/ParentComponent";
 import { useReducer } from "react";
@@ -173,7 +174,10 @@ const App = () => {
       <hr />
       <DataFetchingTwo /> */}
       {/* <ParentComponent /> */}
-      <ParentComponent />
+      {/* <ParentComponent /> */}
+
+      <h1>hello</h1>
+      <UseStateHook />
     </div>
   );
 };
