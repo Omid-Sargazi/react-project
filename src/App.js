@@ -102,6 +102,7 @@ import "./App.css";
 import UseStateHook from "./Componentstwo/UseStateHook";
 import USeStateHook002 from "./Componentstwo/useStateHook002";
 import UseStateHook03 from "./Componentstwo/useStateHook003";
+import UseState from "./Componentstwo/UseState";
 // import ParentComponent from "./Components/ParentComponent";
 import ParentComponent from "./Components/UseMemo/ParentComponent";
 import { useReducer } from "react";
@@ -177,11 +178,12 @@ const App = () => {
       <DataFetchingTwo /> */}
       {/* <ParentComponent /> */}
       {/* <ParentComponent /> */}
-
-      <h1>hello</h1>
-      <UseStateHook />
+      {/* <UseStateHook />
       <USeStateHook002 />
-      <UseStateHook03 />
+      <UseStateHook03 /> */}
+
+      {/* ///////////////////////////////////////////// */}
+      <UseState />
     </div>
   );
 };
