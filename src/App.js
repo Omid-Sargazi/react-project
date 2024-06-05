@@ -104,6 +104,8 @@ import USeStateHook002 from "./Componentstwo/useStateHook002";
 import UseStateHook03 from "./Componentstwo/useStateHook003";
 import UseState from "./Componentstwo/UseState";
 import UseEffect01 from "./Componentstwo/UseEffect01";
+import UseEffect02 from "./Componentstwo/useEffect02";
+import MouseCounter02 from "./Componentstwo/MouseCounter02";
 import MouseContainer from "./Componentstwo/MouseContainer";
 // import ParentComponent from "./Components/ParentComponent";
 import ParentComponent from "./Components/UseMemo/ParentComponent";
@@ -187,7 +189,9 @@ const App = () => {
       {/* ///////////////////////////////////////////// */}
       {/* <UseState /> */}
       {/* <UseEffect01 /> */}
-      <MouseContainer />
+      {/* <MouseContainer /> */}
+      {/* <UseEffect02 /> */}
+      <MouseCounter02 />
     </div>
   );
 };
