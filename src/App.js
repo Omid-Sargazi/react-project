@@ -110,6 +110,8 @@ import MouseContainer from "./Componentstwo/MouseContainer";
 // import ParentComponent from "./Components/ParentComponent";
 import ParentComponent from "./Components/UseMemo/ParentComponent";
 import { useReducer } from "react";
+import AllAboutuseEffect from "./Componentstwo/AllAboutuseEffect";
+import MouseCounter03 from "./Componentstwo/MouseCounter03";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -187,10 +189,12 @@ const App = () => {
       <UseStateHook03 /> */}
       {/* ///////////////////////////////////////////// */}
       {/* <UseState /> */}
-      <UseEffect01 />
-      <MouseContainer />
+      {/* <UseEffect01 />
+      <MouseContainer /> */}
       {/* <UseEffect02 />
       <MouseCounter02 /> */}
+      {/* <AllAboutuseEffect /> */}
+      <MouseCounter03 />
     </div>
   );
 };
