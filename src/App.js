@@ -114,6 +114,7 @@ import AllAboutuseEffect from "./Componentstwo/AllAboutuseEffect";
 import MouseCounter03 from "./Componentstwo/MouseCounter03";
 import FetchData from "./Componentstwo/FetchData";
 import FetchData02 from "./Componentstwo/FetchData02";
+import ComponentC from "./Componentstwo/ComponentC";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -198,7 +199,8 @@ const App = () => {
       {/* <AllAboutuseEffect /> */}
       {/* <MouseCounter03 /> */}
       {/* <FetchData /> */}
-      <FetchData02 />
+      {/* <FetchData02 /> */}
+      <ComponentC />
     </div>
   );
 };
