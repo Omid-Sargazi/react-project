@@ -113,6 +113,7 @@ import { useReducer } from "react";
 import AllAboutuseEffect from "./Componentstwo/AllAboutuseEffect";
 import MouseCounter03 from "./Componentstwo/MouseCounter03";
 import FetchData from "./Componentstwo/FetchData";
+import FetchData02 from "./Componentstwo/FetchData02";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -196,7 +197,8 @@ const App = () => {
       <MouseCounter02 /> */}
       {/* <AllAboutuseEffect /> */}
       {/* <MouseCounter03 /> */}
-      <FetchData />
+      {/* <FetchData /> */}
+      <FetchData02 />
     </div>
   );
 };
