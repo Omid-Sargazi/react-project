@@ -115,6 +115,7 @@ import MouseCounter03 from "./Componentstwo/MouseCounter03";
 import FetchData from "./Componentstwo/FetchData";
 import FetchData02 from "./Componentstwo/FetchData02";
 import ComponentC from "./Componentstwo/ComponentC";
+import UseReducer from "./Componentstwo/UseReducer";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -200,7 +201,8 @@ const App = () => {
       {/* <MouseCounter03 /> */}
       {/* <FetchData /> */}
       {/* <FetchData02 /> */}
-      <ComponentC />
+      {/* <ComponentC /> */}
+      <UseReducer />
     </div>
   );
 };
