@@ -116,6 +116,7 @@ import FetchData from "./Componentstwo/FetchData";
 import FetchData02 from "./Componentstwo/FetchData02";
 import ComponentC from "./Componentstwo/ComponentC";
 import UseReducer from "./Componentstwo/UseReducer";
+import UseReducer02 from "./Componentstwo/UseReducer02";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -202,7 +203,8 @@ const App = () => {
       {/* <FetchData /> */}
       {/* <FetchData02 /> */}
       {/* <ComponentC /> */}
-      <UseReducer />
+      {/* <UseReducer /> */}
+      <UseReducer02 />
     </div>
   );
 };
